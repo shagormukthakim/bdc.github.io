@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+    <link rel="stylesheet" href="inactive.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Tracker</h1>
+        <input type="text" id="usernameInput" placeholder="Enter usernames separated by @">
+        <button onclick="sortUsernames()">Sort & Update</button>
+        <button onclick="findNotAttended()">Find Not Attended</button>
+        <button onclick="copyUsernames()">Copy</button>
+        <button onclick="resetTracker()">Reset</button>
+        <input type="text" id="searchInput" placeholder="Search for usernames">
+        <div id="suggestions"></div>
+        <h2>Attendance Sheet</h2>
+        <table id="attendanceSheet">
+            <tr>
+                <th>Username</th>
+                <th>Attended</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="inactive.js"></script>
+</body>
+</html>

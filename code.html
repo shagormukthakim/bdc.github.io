@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="code.css">
+    <title>Usernames Storage</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Usernames Storage</h1>
+        <div>
+            <textarea id="usernameInput" placeholder="Enter usernames (one per line)" rows="4"></textarea>
+            <button onclick="addUsernames()">Add Usernames</button>
+        </div>
+        <div>
+            <p id="totalDisplay">Total: 0</p>
+            <div id="usernameList"></div>
+        </div>
+        <div>
+            <input id="removeInput" placeholder="Remove Usernames (comma-separated)">
+            <button onclick="removeUsernames()">Remove Selected</button>
+        </div>
+        <div id="confirmationText"></div>
+        <div>
+            <button onclick="showAllUsernames()">Show All</button>
+            <button onclick="copyAllUsernames()">Copy All</button>
+        </div>
+        <div id="showAllContainer"></div>
+        <a href="inactive.html" target="_blank">
+            <button>Inactive Members</button>
+        </a>
+    </div>
+    
+
+    <script src="code.js"></script>
+</body>
+</html>
